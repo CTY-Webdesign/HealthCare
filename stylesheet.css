@@ -1,0 +1,269 @@
+/*
+https://huemint.com/website-1/#palette=113032-fff9fd -61a35a
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "loos-normal", sans-serif;
+    font-style: normal;
+}
+html {
+    background-color: #113032;
+    scroll-behavior: smooth;
+    
+}
+@media screen and (min-width: 450px) {
+    .sidenav {
+        padding-top: 15px;
+        background-color: #61a35a;
+        
+    }
+    .sidenav a {
+        font-size: 18px;
+        color:#fff9fd ;
+        
+    }
+    .navbar{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .links{
+        display: none;
+        color:#fff9fd ;
+    }
+
+}
+
+/**DESKTOP*/
+@media only screen and (min-width: 601px) {
+    .navbar {
+        display: flex;
+        background-color: #61a35a;
+        justify-content: flex-end;
+        padding: 15px;
+        text-align: left;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .navbar img{
+        left:0;
+        width: 70px;
+        height: 70px;
+    }
+    .navbar a{
+        text-decoration: none;
+        color:#fff9fd ;
+        text-transform: uppercase;
+    }
+    .navbar a:hover{
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .links{
+        display: flex;
+        justify-content:flex-end;
+        right: 0;
+        
+       
+        
+    }
+
+    .links a {
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+        
+        
+    }
+
+
+    .open-btn{
+        display:none;
+    }
+
+    .sidenav{
+        display: none;
+    }
+
+}
+.centered-div {
+
+    width: 80%;
+    max-width: 600px;
+    margin: 50px  auto; /* Centre horizontalement */
+    text-align: center; /* Centre le texte à l'intérieur */
+    padding: 20px;
+    background-color: #f0f8ff; /* Couleur de fond légère */
+    border: 2px solid #61a35a; /* Bordure verte */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.navbar {
+   
+    padding: 15px;
+    font-weight: 400;
+   
+
+}
+
+
+
+.open-btn {
+    background-color: #61a35a;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color:#fff9fd ;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+/*61a35a*/
+.sidenav a:hover {
+    color: #80B67A ;
+}
+
+.fa-solid.fa-house{
+    margin-right: 15px;
+}
+
+.fa-solid.fa-book-medical{
+    margin-right: 15px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+#mainpage{
+    
+    overflow: hidden;
+    font-weight: 700;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15% auto;
+
+}
+
+.intro p{
+    color: #fff9fd ;
+    font-size: 20px;
+    text-align: center;
+}
+
+.intro h1{
+    color: #61a35a;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.intro a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 5px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    width: 150px;
+    
+    border: 2px solid #61a35a;
+    
+}
+
+.intro a:hover{
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid #61a35a;
+    color: #61a35a;
+    transition: background-color 0.3s, color 0.3s, text-decoration 0.3s;
+
+}
+#banner{
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+#banner h1{
+    color: #113032;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding-top: 50px;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.container img{
+    width: 35%;
+    height: auto;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.box i{
+    color: #61a35a;
+    font-size: 100px;
+}
+.box h3{
+    padding-top: 25px;
+    color: #61a35a;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.box img{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}

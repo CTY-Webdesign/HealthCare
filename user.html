@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user.css">
+    <script src="https://kit.fontawesome.com/756bf08822.js" crossorigin="anonymous"></script>
+    <title>Profil Médical</title>
+</head>
+<body>
+    <div class="navbar">
+        <button class="open-btn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+        <div class="links">
+            <a href="index.html"><i class="fa-solid fa-house"></i> accueil</a>
+            <a href="user.html"><i class="fa-solid fa-book-medical"></i>Votre espace</a>
+        </div>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html"><i class="fa-solid fa-house"></i> accueil</a>
+        <a href="user.html"><i class="fa-solid fa-book-medical"></i>Profil Médical</a>
+
+    </div>
+    <header class="header">
+        <h1>Profil Médical</h1>
+    </header>
+
+    <main class="content">
+        <section class="profile-section">
+            <h2>Informations Générales</h2>
+            <div class="info-item">
+                <img src="Height meter-rafiki.png">
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-ruler-vertical"></i>
+                <span><strong>Taille :</strong> <span id="taille">175 cm</span></span>
+                <button class="edit-btn" data-field="taille">Modifier</button>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-weight"></i>
+                <span><strong>Poids :</strong> <span id="poids">68 kg</span></span>
+                <button class="edit-btn" data-field="poids">Modifier</button>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-calculator"></i>
+                <span><strong>IMC :</strong> <span id="imc">--</span></span>
+                <em>L'IMC (Indice de Masse Corporelle) est un calcul simple basé sur le poids et la taille qui permet d'estimer si une personne a un poids adapté à sa corpulence.</em>
+            </div>
+            <div id="imc-status"></div>
+        </section>
+
+        <section class="profile-section">
+            <h2>Allergies</h2>
+            <ul>
+                <li><i class="fa-solid fa-check-circle"></i> Pollen</li>
+                <li><i class="fa-solid fa-check-circle"></i> Arachides</li>
+                <li><i class="fa-solid fa-check-circle"></i> Antibiotiques (pénicilline)</li>
+            </ul>
+        </section>
+
+        <section class="profile-section">
+            <h2>Maladies Chroniques</h2>
+            <ul>
+                <li><i class="fa-solid fa-circle-exclamation"></i> Asthme</li>
+                <li><i class="fa-solid fa-circle-exclamation"></i> Diabète de type 1</li>
+            </ul>
+        </section>
+        <section class="profile-section">
+            <h2>Sports pratiqué</h2>
+            <ul>
+                <li><i class="fa-solid fa-dumbbell"></i> Boxe</li>
+                <li><i class="fa-solid fa-dumbbell"></i> Tennis</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; HealthCare - Tous droits réservés</p>
+    </footer>
+</body>
+<script src="user.js"></script>
+
+</html>

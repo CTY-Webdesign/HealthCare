@@ -1,0 +1,354 @@
+    /* Colors */
+    :root {
+        --primary-color: #fff9fd; /* Blanc */
+        --secondary-color: #61a35a; /* Vert */
+        --tertiary-color: #dd1a03; /* Rouge */
+        --text-color: #333;
+    }
+
+    /* Global Styles */
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 601px) {
+    
+        .header {
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+
+        .profile-section {
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .profile-section h2 {
+            font-size: 1.3rem;
+        }
+
+        .info-item,
+        ul li {
+            font-size: 1.1rem;
+        }
+
+        ul li i,
+        .info-item i {
+            font-size: 1.2rem;
+        }
+        .info-item {
+            flex-direction: column; /* Aligne verticalement les éléments */
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .edit-btn {
+            margin-left: 0; /* Supprime la marge latérale */
+            margin-top: 0.5rem; /* Ajoute un espacement au-dessus */
+            width: 100%; /* Les boutons prennent toute la largeur */
+            text-align: center; /* Texte centré */
+            padding: 0.6rem;
+        }
+        
+    }
+
+    @media (max-width: 480px) {
+
+        .header {
+            font-size: 1.2rem;
+            padding: 0.8rem;
+        }
+
+        .profile-section {
+            padding: 0.8rem;
+        }
+
+        .profile-section h2 {
+            font-size: 1.1rem;
+        }
+
+        .info-item,
+        ul li {
+            font-size: 1rem;
+        }
+
+        ul li i,
+        .info-item i {
+            font-size: 1rem;
+        }
+        .edit-btn {
+            font-size: 0.9rem; /* Réduit légèrement la taille du texte */
+            padding: 0.4rem 0.8rem; /* Ajuste la taille des boutons */
+        }
+    }
+
+    
+    
+    .navbar {
+       
+        padding: 15px;
+        font-weight: 400;
+       
+    
+    }
+    
+    
+    
+    .open-btn {
+        background-color: #61a35a;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    
+    @media screen and (min-width: 450px) {
+        .sidenav {
+            padding-top: 15px;
+            background-color: #61a35a;
+            
+        }
+        .sidenav a {
+            font-size: 18px;
+            color:#fff9fd ;
+            
+        }
+        .navbar{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .links{
+            display: none;
+            color:#fff9fd ;
+        }
+    
+    }
+    
+    /**DESKTOP*/
+    @media only screen and (min-width: 601px) {
+        .navbar {
+            display: flex;
+            background-color: #61a35a;
+            justify-content: flex-end;
+            padding: 15px;
+            text-align: left;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar img{
+            left:0;
+            width: 70px;
+            height: 70px;
+        }
+        .navbar a{
+            text-decoration: none;
+            color:#fff9fd ;
+            text-transform: uppercase;
+        }
+        .navbar a:hover{
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .links{
+            display: flex;
+            justify-content:flex-end;
+            right: 0;
+            
+           
+            
+        }
+    
+        .links a {
+            display: flex;
+            align-items: center;
+            margin-right: 100px;
+            
+            
+        }
+    
+    
+        .open-btn{
+            display: none;
+        }
+    
+        .sidenav{
+            display: none;
+        }
+    
+    }
+    
+    
+    .navbar {
+       
+        padding: 15px;
+        font-weight: 400;
+       
+    
+    }
+    
+    
+    
+    .open-btn {
+        background-color: #61a35a;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidenav a {
+        padding: 15px 25px;
+        text-decoration: none;
+        font-size: 18px;
+        color:#fff9fd ;
+        display: block;
+        transition: 0.3s;
+        text-transform: uppercase;
+    }
+    /*61a35a*/
+    .sidenav a:hover {
+        color: #80B67A ;
+    }
+    
+    .fa-solid.fa-house{
+        margin-right: 15px;
+    }
+    
+    .fa-solid.fa-book-medical{
+        margin-right: 15px;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    
+    .header {
+        background-color: var(--primary-color);
+        color: var( --secondary-color);
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .content {
+        padding: 1rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    /* Section Styles */
+    .profile-section {
+        margin: 1.5rem 0;
+        padding: 1.5rem;
+        background-color: var(--primary-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-section h2 {
+        color: var(--secondary-color);
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .info-item i {
+        font-size: 1.5rem;
+        color: var(--tertiary-color);
+    }
+    .info-item img {
+      width:20%;
+    }
+
+    .info-item em{
+        font-size:1rem;
+    }
+    .edit-btn {
+        display: inline-block;
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-left: 1rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
+    }
+
+    .edit-btn:hover {
+        background-color: #b81203;
+        transform: scale(1.05);
+    }
+
+    .edit-btn:active {
+        transform: scale(0.95);
+    }
+
+    .edit-btn:focus {
+        outline: 2px solid var(--secondary-color);
+        outline-offset: 2px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    ul li i {
+        font-size: 1.3rem;
+        color: var(--tertiary-color);
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+        font-size: 1rem;
+    }
+
+    
